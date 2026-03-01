@@ -1,0 +1,15 @@
+{
+  "name": "student-portal-dependency-graph",
+  "version": "1.0.0",
+  "description": "Neo4j dependency graph for Global Student Portal",
+  "main": "migrate.js",
+  "scripts": {
+    "migrate": "node migrate.js",
+    "metrics": "node metrics.js",
+    "start": "docker-compose up -d",
+    "stop": "docker-compose down"
+  },
+  "dependencies": {
+    "neo4j-driver": "^5.15.0"
+  }
+}
